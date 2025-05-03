@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcasing DOM Manipulation</title>
+  <style>
+    #dynamic-paragraph {
+      color: rgb(16, 93, 175);
+    }
+    .highlight {
+      background-color: yellow;
+    }
+    section + section {
+    margin-top: 20px; /* Adds space between sections */
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive DOM Page</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="dynamic-paragraph">Click the button to change this text and color.</p>
+      <button onclick="changeText()">Change Text & Style</button>
+    </section>
+
+    <section>
+      <button onclick="addElement()">Add Element</button>
+      <button onclick="removeElement()">Remove Element</button>
+      <div id="container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My DOM Manipulation Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
